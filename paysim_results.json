@@ -1,0 +1,159 @@
+{
+  "results": [
+    {
+      "model": "Isolation Forest",
+      "accuracy": 0.9394859184692819,
+      "precision": 0.3178346064430422,
+      "recall": 0.4661471018022406,
+      "f1": 0.37796208530805686,
+      "roc_auc": 0.885344241483412,
+      "pr_auc": 0.26440843238010553,
+      "cm": [
+        [
+          47947,
+          2054
+        ],
+        [
+          1096,
+          957
+        ]
+      ]
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9997886809851309,
+      "precision": 0.9980487804878049,
+      "recall": 0.9965903555772041,
+      "f1": 0.9973190348525469,
+      "roc_auc": 0.9988561163993476,
+      "pr_auc": 0.9981551933027026,
+      "cm": [
+        [
+          49997,
+          4
+        ],
+        [
+          7,
+          2046
+        ]
+      ]
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.9998078918046643,
+      "precision": 0.9985358711566618,
+      "recall": 0.9965903555772041,
+      "f1": 0.9975621647976597,
+      "roc_auc": 0.9984944285527343,
+      "pr_auc": 0.9910108871515553,
+      "cm": [
+        [
+          49998,
+          3
+        ],
+        [
+          7,
+          2046
+        ]
+      ]
+    },
+    {
+      "model": "Hybrid (proposed)",
+      "accuracy": 0.9998271026241979,
+      "precision": 0.9990234375,
+      "recall": 0.9965903555772041,
+      "f1": 0.9978054133138259,
+      "roc_auc": 0.9988125907233438,
+      "pr_auc": 0.9948647092570653,
+      "cm": [
+        [
+          49999,
+          2
+        ],
+        [
+          7,
+          2046
+        ]
+      ]
+    }
+  ],
+  "cv_mean": 0.9980291631049604,
+  "cv_std": 0.0008407908830207572,
+  "best_threshold": 0.7899999999999999,
+  "test_size": 52054,
+  "test_fraud": 2053,
+  "feature_importance": [
+    {
+      "feature": "newbalanceDest",
+      "importance": 0.39919981917230707
+    },
+    {
+      "feature": "newbalanceOrig",
+      "importance": 0.31369612314619444
+    },
+    {
+      "feature": "oldbalanceOrg",
+      "importance": 0.13601904647028898
+    },
+    {
+      "feature": "is_transfer",
+      "importance": 0.04667080812281761
+    },
+    {
+      "feature": "errorBalanceOrig",
+      "importance": 0.03984020169746427
+    },
+    {
+      "feature": "is_cashout",
+      "importance": 0.029123055925523392
+    },
+    {
+      "feature": "amount_to_balance_ratio",
+      "importance": 0.01563649423631073
+    },
+    {
+      "feature": "oldbalanceDest",
+      "importance": 0.009920248380237218
+    },
+    {
+      "feature": "errorBalanceDest",
+      "importance": 0.004711817153706439
+    },
+    {
+      "feature": "orig_emptied",
+      "importance": 0.0027655712285906335
+    },
+    {
+      "feature": "amount",
+      "importance": 0.001718315569870979
+    },
+    {
+      "feature": "iso_score",
+      "importance": 0.0005952031304539768
+    },
+    {
+      "feature": "hour_of_day",
+      "importance": 0.00010297373901868368
+    },
+    {
+      "feature": "is_round_amount",
+      "importance": 3.220272156941154e-07
+    },
+    {
+      "feature": "dest_is_merchant",
+      "importance": 0.0
+    },
+    {
+      "feature": "is_payment",
+      "importance": 0.0
+    },
+    {
+      "feature": "is_cashin",
+      "importance": 0.0
+    },
+    {
+      "feature": "is_debit",
+      "importance": 0.0
+    }
+  ]
+}
